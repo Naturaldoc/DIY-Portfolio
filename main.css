@@ -1,0 +1,251 @@
+/* Main CSS file for DIY-Portfolio */
+
+
+/* Available fonts:
+
+font-family: 'Arbutus Slab', serif;
+font-family: 'Emblema One', cursive;
+font-family: 'Carrois Gothic', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Autour One', cursive;
+
+*/
+
+html {
+
+	//background-color: #ffffee;
+	//background-image: url("images/background.jpg");
+	background-repeat: repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	
+
+	// Thanks CSS-Tricks for this!  A good resource yall: www.css-tricks.com
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+
+	font-family: 'Open Sans', san-serif;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+h1 {
+
+	font-family: 'Arbutus Slab', serif;
+	font-size: 34px;
+	color: #010101;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: 'Emblema One', cursive;
+	font-size: 86px;
+	color: #ccffcc;
+	text-align: center;
+	//text-decoration: underline;
+	margin: 0;
+	padding: 2px;
+	text-shadow: 1px 1px 2px #D42A1E;
+}
+
+
+p {
+	color: #000;
+	font-family: 'Arbutus Slab', serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	padding: 3px;
+	//text-shadow: 1px 1px 1px #111;
+
+}
+
+
+a {
+	text-decoration: none;
+	font-size: 19px;
+	text-align: center;
+}
+
+a:link { color: #ee0033; }
+a:visited { color: #ee0033; }
+a:hover { color: #ffff00; }
+a:active {}
+
+/* Some useful classes I like to have defined, just in case__________________________________________________________________________________*/
+
+.rounded_corners {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.opaque {
+	zoom: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	-khtml-opacity .75;
+	opacity: .75;
+}
+
+.drop_shadow {
+	-moz-box-shadow: 0px 10px 24px -12px #993366;
+	-webkit-box-shadow: 0px 10px 24px -12px #993366;
+	box-shadow: 0px 10px 24px -12px #993366;	
+}
+
+// From CSS-Tricks
+
+.gradient {
+   // fallback/image non-cover color
+   //background-color: $color2; 
+
+   // fallback image
+   //background-image: url(images/fallback-gradient.png); 
+
+   // Firefox 3.6+
+   //background-image: -moz-linear-gradient($color1, $color2);
+
+   // Safari 4+, Chrome 1+
+   //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color2), to($color1));
+
+   // Safari 5.1+, Chrome 10+
+   //background-image: -webkit-linear-gradient($color1, $color2); 
+
+   // Opera 11.10+
+   //background-image: -o-linear-gradient($color1, $color2);
+}
+
+.imgCenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 
+
+   This is arguably bad form, but I like to clear floats this way.  I think it is easier to read in the html.
+   For example:
+
+   <div id="example" style="float: left"></div>
+   <div class="clearIt"></div>
+
+*/
+
+.clearIt {
+	clear: both;
+}
+
+/* ID Definitions____________________________________________________________________________________________________ */
+
+#site_container {
+	width: 100%;
+	height: 2000px;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin: 0;
+	padding: 0;
+	//background-color: #fff;
+}
+
+#header {
+
+	//background-image: url("images/background.jpg");
+	background-color: #ffddcc;
+	height: 210px;
+	margin: 0;
+	padding: 20px;
+
+}
+
+.personal_info {
+	
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+
+}
+
+#project_container {
+	margin: 0;
+	padding: 0;
+}
+
+.project {
+
+	margin: 0;
+	padding: 0;
+
+	background-repeat: none;
+	background-position: top center;
+	background-attachment: fixed;
+	
+
+	// Thanks CSS-Tricks for this!  A good resource yall: www.css-tricks.com
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	height: 1000px;
+
+}
+
+.project_header {
+
+	height: 60px;
+	background-color: #f1f1f1;
+
+}
+
+.info {
+
+	padding-top: 20px;
+
+}
+
+#table_of_contents {
+	background-image: url("images/portfolio_bg_1.jpg");
+}
+
+#project2 {
+	background-image: url("images/portfolio_bg_2.jpg");
+}
+
+#project3 {
+	background-image: url("images/portfolio_bg_3.jpg");
+}
+
+#project4 {
+	background-image: url("images/portfolio_bg_4.jpg");
+}
+
+#project5 {
+	background-image: url("images/portfolio_bg_5.jpg");
+}
+
+#project6 {
+	background-image: url("images/portfolio_bg_6.jpg");
+}
+
+#project7 {
+	background-image: url("images/portfolio_bg_7.jpg");
+}
+
