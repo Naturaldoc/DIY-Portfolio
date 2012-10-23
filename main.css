@@ -70,9 +70,8 @@ p {
 	font-size: 20px;
 	text-align: center;
 	margin: 0;
-	padding: 3px;
+	padding: 8px;
 	//text-shadow: 1px 1px 1px #111;
-
 }
 
 
@@ -217,11 +216,21 @@ a:active {}
 
 .info {
 
-	padding-top: 20px;
+	
+	padding: 30px;
+
+	background-color: #addbff;
+
+	zoom: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	-khtml-opacity .75;
+	opacity: .75;
 
 }
 
-#table_of_contents {
+#project1 {
 	background-image: url("images/portfolio_bg_1.jpg");
 }
 
