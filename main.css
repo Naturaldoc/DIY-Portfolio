@@ -1,5 +1,8 @@
 /* Main CSS file for DIY-Portfolio */
-
+/* A good resource to check out is CSS-Tricks.com if you have any questions about anything CSS related.
+   Also, just Googling the CSS property will bring back results on how to use it, for example if you google 'CSS margin',
+   a whole list of sites will pop up that tell you how to use the margin property.
+*/
 
 /* Available fonts:
 
@@ -13,20 +16,6 @@ font-family: 'Autour One', cursive;
 */
 
 html {
-
-	//background-color: #ffffee;
-	//background-image: url("images/background.jpg");
-	background-repeat: repeat;
-	background-position: top center;
-	background-attachment: fixed;
-	
-
-	// Thanks CSS-Tricks for this!  A good resource yall: www.css-tricks.com
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
 	margin: 0;
 	padding: 0;
 
@@ -34,25 +23,15 @@ html {
 
 body {
 
-	font-family: 'Open Sans', san-serif;
-	font-size: 18px;
+	font-family: 'Arbutus Slab', serif;
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
 
 }
 
+/* h1 is the property for a header.  You can define h1 through h6 for different headers, but for this site I only use h1 */
 h1 {
-
-	font-family: 'Arbutus Slab', serif;
-	font-size: 34px;
-	color: #010101;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-h2 {
 	font-family: 'Emblema One', cursive;
 	font-size: 86px;
 	color: #ccffcc;
@@ -64,20 +43,24 @@ h2 {
 }
 
 
+/* p is the property for paragraphs. */
 p {
-	color: #000;
+
 	font-family: 'Arbutus Slab', serif;
 	font-size: 20px;
 	text-align: center;
+	color: #000;
+
 	margin: 0;
 	padding: 8px;
-	//text-shadow: 1px 1px 1px #111;
 }
 
+/* a is the property for links.  The properties for a:link, a:visited, a:hover, and a:active are for different states, 
+   for example hover is when you place your cursor over the link.
+*/
 
 a {
 	text-decoration: none;
-	font-size: 19px;
 	text-align: center;
 }
 
@@ -86,13 +69,7 @@ a:visited { color: #ee0033; }
 a:hover { color: #ffff00; }
 a:active {}
 
-/* Some useful classes I like to have defined, just in case__________________________________________________________________________________*/
-
-.rounded_corners {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-}
+/* Some useful general classes I apply to various divs______________________________________________________________*/
 
 .opaque {
 	zoom: 1;
@@ -109,72 +86,20 @@ a:active {}
 	box-shadow: 0px 10px 24px -12px #993366;	
 }
 
-// From CSS-Tricks
-
-.gradient {
-   // fallback/image non-cover color
-   //background-color: $color2; 
-
-   // fallback image
-   //background-image: url(images/fallback-gradient.png); 
-
-   // Firefox 3.6+
-   //background-image: -moz-linear-gradient($color1, $color2);
-
-   // Safari 4+, Chrome 1+
-   //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color2), to($color1));
-
-   // Safari 5.1+, Chrome 10+
-   //background-image: -webkit-linear-gradient($color1, $color2); 
-
-   // Opera 11.10+
-   //background-image: -o-linear-gradient($color1, $color2);
-}
-
-.imgCenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* 
-
-   This is arguably bad form, but I like to clear floats this way.  I think it is easier to read in the html.
-   For example:
-
-   <div id="example" style="float: left"></div>
-   <div class="clearIt"></div>
-
-*/
-
-.clearIt {
-	clear: both;
-}
-
 /* ID Definitions____________________________________________________________________________________________________ */
 
+/* The site container is a DIV that holds all the info for the site.  If you shift this div using, for example, with 'margin-left: 100px' then
+   you will shift the contents of the entire site 100 pixels from the left hand side. */
 #site_container {
 	width: 100%;
-	height: 2000px;
-	margin-left: auto;
-	margin-right: auto;
 
-	margin: 0;
+	margin: 0px;
 	padding: 0;
-	//background-color: #fff;
 }
 
-#header {
 
-	//background-image: url("images/background.jpg");
-	background-color: #ffddcc;
-	height: 210px;
-	margin: 0;
-	padding: 20px;
-
-}
-
-.personal_info {
+/* my_picture is a class that holds your bio pic on the main site */
+.my_picture {
 	
 	width: 100%;
 	text-align: center;
@@ -182,45 +107,41 @@ a:active {}
 
 }
 
-#project_container {
-	margin: 0;
-	padding: 0;
-}
-
+/* The project class holds property values that are true for each and every project on the site. */
 .project {
 
 	margin: 0;
 	padding: 0;
 
-	background-repeat: none;
-	background-position: top center;
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-attachment: fixed;
 	
-
-	// Thanks CSS-Tricks for this!  A good resource yall: www.css-tricks.com
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
 
 	height: 1000px;
 
 }
 
-.project_header {
+/* The divider_bar class is a white bar that appears at the top of each project.  You can change the background color to #000 to make it black
+   instead of white, or change the height to 100px (or more) to make it fatter. */
+.divider_bar {
 
 	height: 60px;
-	background-color: #f1f1f1;
-
+	background-color: #fff;
 }
 
+/* The info class is where all the info for your project is written.  These properties are true for the information boxes for all your projects.
+   Changing the background-color to '#ccc', for example, will make all your info boxes gray instead of light blue. */
 .info {
 
-	
 	padding: 30px;
-
 	background-color: #addbff;
 
+	/* The code below makes the info class 75% opaque. You have to define the various properties for browser compatibility  */
 	zoom: 1;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 	filter: alpha(opacity=75);
@@ -229,6 +150,20 @@ a:active {}
 	opacity: .75;
 
 }
+
+/* The footer ID is for the footer that appears at the very bottom of the page. */
+#footer {
+	width: 100%;
+	background-color: #ccc;
+	height: 50px;
+	padding: 10px;
+}
+
+
+/* THIS IS WHERE YOU CHANGE THE IMAGES: */
+
+/* The project IDs below are defined to hold the background images for each of your projects.  Feel free to add more or delete some as needed. 
+   If you add more, don't forget to place the actual image in the images directory. */
 
 #project1 {
 	background-image: url("images/portfolio_bg_1.jpg");
