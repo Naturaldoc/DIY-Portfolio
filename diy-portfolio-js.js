@@ -1,18 +1,28 @@
 // DIY-Portfolio-js
 //
-// This file is written using mostly jQuery.
-// The only purpose of this code is to make the website work with mobile phones and tablets.
-// You shouldn't need to change any of this code, but feel free to mess around if you are feeling adventurous.
-// jQuery is powerful and it lets you do a lot of awesome things easily.
-// Check out www.jQuery.com for more info.
+// This file is written using mostly jQuery (jquery.com).
+// Most of this code is here to make the website work with mobile phones and tablets.
+// You shouldn't need to change anything, but feel free to mess around if you are feeling adventurous.
+//
+// Also, this file has a function that scrolls you back to the top if you click on the footer.
 //
 /////////////////////////////////////////////////////////////////////////////
 
 
 $(document).ready(function() {
 
+
 	// Functions that require the entire page to be loaded, images and all.
 	$(window).bind('load', function() {
+
+		// Scrolls to top if you click on the #footer div
+		$('#footer').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1000);
+			return false;
+		});
+		
 
 		// THANK YOU to abeautifulsite.net for the simple elegant code snippet below, used to detect mobile browsers:
 		var isMobile = {

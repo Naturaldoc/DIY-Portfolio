@@ -64,9 +64,9 @@ a {
 	text-align: center;
 }
 
-a:link { color: #ee0033; }
-a:visited { color: #ee0033; }
-a:hover { color: #ffff00; }
+a:link { color: #2E2A3B; }
+a:visited { color: #2E2A3B; }
+a:hover { color: #ffffdd; }
 a:active {}
 
 /* Some useful general classes I apply to various divs______________________________________________________________*/
@@ -157,10 +157,13 @@ a:active {}
 	background-color: #ccc;
 	height: 50px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 
 /* THIS IS WHERE YOU CHANGE THE IMAGES: */
+
+/* The photos I use are all 1600x800 pixels.  The site automatically scales images to be as big as possible and still fit within the frame. */
 
 /* The project IDs below are defined to hold the background images for each of your projects.  Feel free to add more or delete some as needed. 
    If you add more, don't forget to place the actual image in the images directory. */
