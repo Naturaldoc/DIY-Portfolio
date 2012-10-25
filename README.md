@@ -5,11 +5,11 @@ A simple, open-source website template for makers who aren't afraid of a little 
 
 +++
 
-Applying to college? Or just need a simple website to showcase your work? DIY-Portfolio is a downloadable website template that can be edited to create a personalized project portfolio. And it's open-source which means it's yours to keep.
+Applying to college? Or just need a simple website to showcase your work? DIY-Portfolio is a downloadable website template that you can edit to create a personalized online project portfolio. And it's open-source which means it's yours to keep.
 
 +++
 
-Save the whole directory to your computer and edit them with your favorite text editor.  Then, you can upload the whole directory to any number of online web hosts such as Blue Host, Namecheap, or Start Logic, just to name a few of the hundreds of companies that offer cheap hosting.
+Save the whole directory to your computer and edit the files with your favorite text editor.  Then, you can upload the whole directory to any number of online web hosts such as Blue Host, Namecheap, or Start Logic, just to name a few of the hundreds of companies that offer cheap hosting.
 
 Feel free to dig in and change anything you like.  It is helpful if you already know a little bit of html and css.  If not, don't let that discourage you--it may just take a bit longer to figure things out.
 
