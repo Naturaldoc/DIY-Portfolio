@@ -69,24 +69,14 @@ a:visited { color: #2E2A3B; }
 a:hover { color: #ffffdd; }
 a:active {}
 
-/* Some useful general classes I apply to various divs______________________________________________________________*/
-
-.opaque {
-	zoom: 1;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-	filter: alpha(opacity=75);
-	-moz-opacity: .75;
-	-khtml-opacity .75;
-	opacity: .75;
-}
-
+/* Drop shadow is a class that I apply to various divs______________________________________________________________*/
 .drop_shadow {
 	-moz-box-shadow: 0px 10px 24px -12px #993366;
 	-webkit-box-shadow: 0px 10px 24px -12px #993366;
 	box-shadow: 0px 10px 24px -12px #993366;	
 }
 
-/* ID Definitions____________________________________________________________________________________________________ */
+/* IDs and site specific class definitions____________________________________________________________________________________________________ */
 
 /* The site container is a DIV that holds all the info for the site.  If you shift this div using, for example, with 'margin-left: 100px' then
    you will shift the contents of the entire site 100 pixels from the left hand side. */
@@ -154,7 +144,7 @@ a:active {}
 /* The footer ID is for the footer that appears at the very bottom of the page. */
 #footer {
 	width: 100%;
-	background-color: #ccc;
+	background-color: #addbff;
 	height: 50px;
 	padding: 10px;
 	cursor: pointer;
